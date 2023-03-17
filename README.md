@@ -16,6 +16,7 @@
 
 - 讓 chatGPT 提供對使用者感興趣的問題建議，進而達到自動生成 FAQ 的目標
 - 透過 OpenAI API，施展咒語 (prompt) 讓 chatGPT 依據輸入的內容 (context，即相關規定) 提出問題；接著再請 chatGPT 依據輸入的內容，回答所收集到的問題
+- Google colab notebook： [[colab_notebook_AS_FAQ.ipynb](colab_notebook_AS_FAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-FAQ/blob/main/colab_notebook_AS_FAQ.ipynb)
 
 ## 案例分享
 
@@ -28,7 +29,8 @@
   - 原始資料 CSV 檔：[[AS-ITS.csv](examples/AS-ITS.csv)]
   - 產製 FAQ 檔：[[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
   - 產製 HTML 檔：[[AS-ITS-QA.csv.html](examples/AS-ITS-QA.csv.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html
+  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+
   
 ## 開發團隊
 
