@@ -1,46 +1,5 @@
 # AS-AIGFAQ
 
-## The current norm and issues of administrative services
-
-- All laws, service explanations, and announcements will be posted on the website.
-- The website is like a big maze where everything is available, but what you're looking for is often hard to find.
-- The quickest way is to call the responsible person and ask, but this leads to them spending a lot of time answering similar questions, ultimately reducing their availability to handle daily public affairs.
-
-## Existing Solutions for Administrative Services
-
-- Single Service Window: Staffed by professional customer service representatives who can answer simple questions. However, complex questions still need to be referred to caseworkers, the response time for referral cases is prolonged, and the customer service representative may make errors in judgment.
-- Organizing FAQ for users to self-check: A dedicated team writes and updates the FAQ regularly. However, the wording, tone, and type of questions in the FAQ are difficult to standardize, and updating it can be prone to oversight.
-- Introducing a chatbot: A conversational bot designed based on a database to answer questions. However, it can only answer standardized questions and requires a significant cost for fine-tuning.
-
-## Our Solution
-
-- Let ChatGPT provide suggestions for questions that users may be interested in, thereby achieving the goal of automatically generating FAQs.
-- Use the OpenAI API to cast a spell (prompt) that prompts ChatGPT to ask questions based on the input content (context, i.e. relevant regulations); then ask ChatGPT to answer the collected questions based on the input content.
-- Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
-
-## Case Sharing
-
-- FAQ for Academic Grant Applications at Academia Sinica
-  - Original data CSV file: [[AS-proposal.csv](examples/AS-proposal.csv)]
-  - Generated FAQ file: [[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - Generated HTML file: [[AS-proposal-QA.csv.html](examples/AS-proposal-QA.csv.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
-- FAQ for Information Services at Academia Sinica
-  - Original data CSV file: [[AS-ITS.csv](examples/AS-ITS.csv)]
-  - Generated FAQ file: [[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - Generated HTML file: [[AS-ITS-QA.csv.html](examples/AS-ITS-QA.csv.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
-
-  
-## Development Team
-
-- Department of Information Technology Services, Academia Sinica
-- Institute of Information Science, Academia Sinica
-
----
-
----
-
 
 ## 現有行政服務的常態與問題
 
@@ -78,3 +37,46 @@
 
 - 中央研究院 資訊服務處
 - 中央研究院 資訊科學研究所
+
+
+--
+
+--
+
+## The current norm and issues of administrative services
+
+- All laws, service explanations, and announcements will be posted on the website.
+- The website is like a big maze where everything is available, but what you're looking for is often hard to find.
+- The quickest way is to call the responsible person and ask, but this leads to them spending a lot of time answering similar questions, ultimately reducing their availability to handle daily public affairs.
+
+## Existing Solutions for Administrative Services
+
+- Single Service Window: Staffed by professional customer service representatives who can answer simple questions. However, complex questions still need to be referred to caseworkers, the response time for referral cases is prolonged, and the customer service representative may make errors in judgment.
+- Organizing FAQ for users to self-check: A dedicated team writes and updates the FAQ regularly. However, the wording, tone, and type of questions in the FAQ are difficult to standardize, and updating it can be prone to oversight.
+- Introducing a chatbot: A conversational bot designed based on a database to answer questions. However, it can only answer standardized questions and requires a significant cost for fine-tuning.
+
+## Our Solution
+
+- Let ChatGPT provide suggestions for questions that users may be interested in, thereby achieving the goal of automatically generating FAQs.
+- Use the OpenAI API to cast a spell (prompt) that prompts ChatGPT to ask questions based on the input content (context, i.e. relevant regulations); then ask ChatGPT to answer the collected questions based on the input content.
+- Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
+
+## Case Sharing
+
+- FAQ for Academic Grant Applications at Academia Sinica
+  - Original data CSV file: [[AS-proposal.csv](examples/AS-proposal.csv)]
+  - Generated FAQ file: [[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
+  - Generated HTML file: [[AS-proposal-QA.csv.html](examples/AS-proposal-QA.csv.html)]
+  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
+- FAQ for Information Services at Academia Sinica
+  - Original data CSV file: [[AS-ITS.csv](examples/AS-ITS.csv)]
+  - Generated FAQ file: [[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
+  - Generated HTML file: [[AS-ITS-QA.csv.html](examples/AS-ITS-QA.csv.html)]
+  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+
+  
+## Development Team
+
+- Department of Information Technology Services, Academia Sinica
+- Institute of Information Science, Academia Sinica
+
