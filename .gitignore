@@ -1,2 +1,4 @@
 config.py
 nohup.out
+*.sh
+__pycache__/*
