@@ -80,7 +80,7 @@ for fname in SOURCES:
 
     df['questions'] = "1." + df.questions
 
-    df2 = pd.DataFrame(columns=['category', 'title', 'context', 'question'])
+    df2 = pd.DataFrame(columns=['category', 'title', 'context', 'question','group','url','contact'])
 
     for index, row in df.iterrows():
         questions = row['questions'].split("\n")
@@ -88,12 +88,13 @@ for fname in SOURCES:
         for q in questions:
             if len(q) != 0:
                 q = re.sub("\d.", "", q, count=1).lstrip()
-                new_df = pd.DataFrame(data={'category': [row['category']], 'title': [row['title']], 'context': [row['context']], 'question': [q]})
+                new_df = pd.DataFrame(data={'category': [row['category']], 'title': [row['title']], 'context': [row['context']], 'question': [q], 'group': [row['group']], 'url': [row['url']], 'contact': [row['contact']]})
                 df2 = pd.concat([df2, new_df], axis=0, ignore_index=True)
                 i = i + 1
 
     df2['answer'] = df2.apply(chatGPT_get_answers, axis=1)
     df2['answer'] = df2.answer
+    df2.drop(columns=['context'])
     df2 = df2.dropna().reset_index().drop('index', axis=1)
     df2.to_csv(faq_name, index=False)
 
