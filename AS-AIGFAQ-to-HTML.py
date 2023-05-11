@@ -3,7 +3,10 @@ import pandas as pd
 import config
 
 SOURCES = {
+        ## fname : HTML_title
+        #'AS-ITS' : '中央研究院 資訊服務 FAQ',
         }
+
 SOURCES = config.SOURCES
 
 
@@ -14,6 +17,7 @@ for fname in SOURCES:
 
     fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/examples/" + fname
     faq_name = fname + '-QA.csv'
+    html_name = fname + '-QA.html'
 
     df = pd.read_csv(faq_name)
     df.dropna(inplace=True)
@@ -65,7 +69,7 @@ for fname in SOURCES:
     html += '</div>'
     html += '</body></html>'
 
-    with open(faq_name + '.html', 'w') as writefile:
+    with open(html_name, 'w') as writefile:
         writefile.write(html)
         writefile.close()
 
