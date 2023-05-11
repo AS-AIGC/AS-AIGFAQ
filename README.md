@@ -18,18 +18,19 @@
 - 讓 ChatGPT 提供對使用者感興趣的問題建議，進而達到自動生成 FAQ 的目標
 - 透過 OpenAI API，施展咒語 (prompt) 讓 ChatGPT 依據輸入的內容 (context，即相關規定) 提出問題；接著再請 ChatGPT 依據輸入的內容，回答所收集到的問題
 - Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
+- Python 語言版本：[[AS-AIGFAQ.py](AS-AIGFAQ.py)]
 
 ## 案例分享
 
 - 中央研究院學術計畫申請 FAQ
   - 原始資料 CSV 檔：[[AS-proposal.csv](examples/AS-proposal.csv)]
   - 產製 FAQ 檔：[[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - 產製 HTML 檔：[[AS-proposal-QA.csv.html](examples/AS-proposal-QA.csv.html)]
+  - 產製 HTML 檔：[[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
   - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
 - 中央研究院資訊服務 FAQ
   - 原始資料 CSV 檔：[[AS-ITS.csv](examples/AS-ITS.csv)]
   - 產製 FAQ 檔：[[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - 產製 HTML 檔：[[AS-ITS-QA.csv.html](examples/AS-ITS-QA.csv.html)]
+  - 產製 HTML 檔：[[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
   - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
 
   
@@ -59,18 +60,20 @@
 - Let ChatGPT provide suggestions for questions that users may be interested in, thereby achieving the goal of automatically generating FAQs.
 - Use the OpenAI API to cast a spell (prompt) that prompts ChatGPT to ask questions based on the input content (context, i.e. relevant regulations); then ask ChatGPT to answer the collected questions based on the input content.
 - Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
+- Python codes：[[AS-AIGFAQ.py](AS-AIGFAQ.py)]
+
 
 ## Case Sharing
 
 - FAQ for Academic Grant Applications at Academia Sinica
   - Original data CSV file: [[AS-proposal.csv](examples/AS-proposal.csv)]
   - Generated FAQ file: [[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - Generated HTML file: [[AS-proposal-QA.csv.html](examples/AS-proposal-QA.csv.html)]
+  - Generated HTML file: [[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
   - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
 - FAQ for Information Services at Academia Sinica
   - Original data CSV file: [[AS-ITS.csv](examples/AS-ITS.csv)]
   - Generated FAQ file: [[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - Generated HTML file: [[AS-ITS-QA.csv.html](examples/AS-ITS-QA.csv.html)]
+  - Generated HTML file: [[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
   - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
 
   
