@@ -2,3 +2,4 @@ config.py
 nohup.out
 *.sh
 __pycache__/*
+output/*
