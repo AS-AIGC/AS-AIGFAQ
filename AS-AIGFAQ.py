@@ -15,7 +15,7 @@ openai.api_key = "YOUR_OPENAI_API_KEY"
 openai.api_key = config.OpenAI_Key
 
 SOURCES = {
-        ## fname : HTML_title
+        ## name : HTML_title
         #'AS-ITS' : '中央研究院 資訊服務 FAQ',
         }
 SOURCES = config.SOURCES
@@ -24,13 +24,13 @@ SOURCES = config.SOURCES
 def chatGPT_get_questions(row):
     try:
         # Create a question based on the service item and service description
-        q = "請根據以下的服務項目與服務說明，使用日常說話的語氣，提出以問號為結尾，並且清楚說明服務項目的問題\n\n服務項目：{"+row.title+"}\n\n服務說明：{"+row.context+"}\n\n問題：\n1."
+        q = "請根據以下的服務項目與服務說明，使用日常說話的語氣，提出以問號為結尾的問題\n\n服務項目：{"+row.title+"}\n\n服務說明：{"+row.context+"}\n\n問題：\n1."
 
         # Request an answer from OpenAI using the GPT-4 model
         rsp = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "使用者"},
+                {"role": "system", "content": "一般大眾"},
                 {"role": "user", "content": q}
             ]
         )
@@ -44,7 +44,7 @@ def chatGPT_get_questions(row):
 def chatGPT_get_answers(row):
     try:
         # Create a question based on the text description to answer the question
-        q = "請根據下列的文字說明，以日常說話的語氣來回答問題\n\n文字說明： {"+row.context+"}\n\n問題：\n{"+row.question+"}\n\n答案："
+        q = "請根據下列的文字說明，使用日常說話的語氣，並且避免使用語助詞來回答問題\n\n文字說明： {"+row.context+"}\n\n問題：\n{"+row.question+"}\n\n答案："
         
         # Request an answer from OpenAI using the GPT-4 model
         rsp = openai.ChatCompletion.create(
@@ -62,17 +62,17 @@ def chatGPT_get_answers(row):
         return ""
 
 
-for fname in SOURCES:
+for name in SOURCES:
     start_time = datetime.now()
-    print("Dealing with " + fname)
+    print("Dealing with " + name)
 
-    HTML_title = SOURCES[fname]
+    HTML_title = SOURCES[name]
 
-    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/examples/" + fname
-    faq_name = fname + '-QA.csv'
+    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/examples/" + name + '.csv'
+    faq_name = "/home/ec2-user/OpenAI/AS-AIGFAQ/output/" + name + '-QA.csv'
 
 
-    df = pd.read_csv(fname + ".csv")
+    df = pd.read_csv(fname)
 
     #df.dropna(inplace = True)
 
@@ -94,7 +94,7 @@ for fname in SOURCES:
 
     df2['answer'] = df2.apply(chatGPT_get_answers, axis=1)
     df2['answer'] = df2.answer
-    df2.drop(columns=['context'])
+    df2 = df2.drop(columns=['context'])
     df2 = df2.dropna().reset_index().drop('index', axis=1)
     df2.to_csv(faq_name, index=False)
 

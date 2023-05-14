@@ -15,7 +15,7 @@ for fname in SOURCES:
 
     HTML_title = SOURCES[fname]
 
-    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/examples/" + fname
+    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/output/" + fname
     faq_name = fname + '-QA.csv'
     html_name = fname + '-QA.html'
 

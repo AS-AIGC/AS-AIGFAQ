@@ -4,7 +4,7 @@ from googletrans import Translator, LANGUAGES
 import config
 
 SOURCES = config.SOURCES
-languages = ['en', 'ja', 'ko', 'fr', 'id', 'vi', 'th']
+languages = ['en', 'ja', 'ko', 'fr', 'de', 'it', 'es', 'id', 'vi', 'th', 'ru', 'uk']
 
 translator = Translator()
 
@@ -13,7 +13,7 @@ for name in SOURCES:
     print("Dealing with " + name)
 
 
-    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/examples/" + name
+    fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/output/" + name
     faq_name = fname + '-QA.csv'
 
     data = pd.read_csv(faq_name)
