@@ -63,16 +63,8 @@
 
 ## Case Sharing
 
-- FAQ for Academic Grant Applications at Academia Sinica
-  - Original data CSV file: [[AS-proposal.csv](examples/AS-proposal.csv)]
-  - Generated FAQ file: [[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - Generated HTML file: [[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
-- FAQ for Information Services at Academia Sinica
-  - Original data CSV file: [[AS-ITS.csv](examples/AS-ITS.csv)]
-  - Generated FAQ file: [[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - Generated HTML file: [[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+- Academia Sinica FAQ: [[DEMO](https://aws.cclljj.net/AS-FAQ/)]
+
 
   
 ## Development Team
