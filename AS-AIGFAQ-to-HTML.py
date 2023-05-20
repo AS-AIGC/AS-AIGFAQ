@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 這段程式碼用於根據提供的設定，從 CSV 檔案中讀取 FAQ 資料並生成對應的 HTML 文件。
 程式使用 pandas 套件來讀取和處理資料，然後根據 FAQ 資料動態生成 HTML 內容，
@@ -9,7 +11,6 @@ The code uses the pandas library to read and process the data, and
 dynamically generates HTML content based on the FAQ data. 
 Finally, it writes the HTML content to files.
 """
-#!/usr/bin/env python3
 
 import pandas as pd
 import config
