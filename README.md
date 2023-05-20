@@ -26,16 +26,7 @@
 
 ## 案例分享
 
-- 中央研究院學術計畫申請 FAQ
-  - 原始資料 CSV 檔：[[AS-proposal.csv](examples/AS-proposal.csv)]
-  - 產製 FAQ 檔：[[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - 產製 HTML 檔：[[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
-- 中央研究院資訊服務 FAQ
-  - 原始資料 CSV 檔：[[AS-ITS.csv](examples/AS-ITS.csv)]
-  - 產製 FAQ 檔：[[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - 產製 HTML 檔：[[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+- 中央研究院行政服務常見問答集 [[DEMO](https://aws.cclljj.net/AS-FAQ/)]
 
   
 ## 開發團隊
