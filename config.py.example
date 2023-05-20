@@ -1,1 +1,4 @@
 OpenAI_Key = "YOUR_OPENAI_API_KEY"
+
+LANGUAGES = ['en', 'ja', 'ko']
+

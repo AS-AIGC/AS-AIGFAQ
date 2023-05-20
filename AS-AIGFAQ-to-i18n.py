@@ -4,7 +4,8 @@ from googletrans import Translator, LANGUAGES
 import config
 
 SOURCES = config.SOURCES
-languages = ['en', 'ja', 'ko', 'fr', 'de', 'it', 'es', 'id', 'vi', 'th', 'ru', 'uk']
+#languages = ['en', 'ja', 'ko', 'fr', 'de', 'it', 'es', 'id', 'vi', 'th', 'ru', 'uk']
+languages = config.LANGUAGES
 
 translator = Translator()
 
