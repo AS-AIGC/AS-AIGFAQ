@@ -18,17 +18,28 @@ for name in SOURCES:
 
     data = pd.read_csv(faq_name)
     data.dropna(inplace=True)
+    data.reset_index(inplace=True)
+
 
     for lang in languages:
-        try:
+        #try:
             translated_data = data.copy()
+            vocabulary = {}
 
             for col in data.columns:
+                if col=='index':
+                    continue
                 for row in range(len(data)):
                     original_text = data.loc[row, col]
-                    translated_text = translator.translate(original_text, dest=lang).text
+                    if col in ['category','title','group','contact','url']:
+                        if data.loc[row, col] not in vocabulary:
+                            vocabulary[data.loc[row, col]] = translator.translate(original_text, dest=lang).text
+                        translated_text = vocabulary[data.loc[row, col]]
+                    else:
+                        translated_text = translator.translate(original_text, dest=lang).text
+
                     translated_data.loc[row, col] = translated_text
 
-            translated_data.to_csv(f"{fname}-QA-{lang}.csv", index=False)
-        except Exception as e:
-            print(f"Error ({name},{lang}): " + str(e))
+            translated_data.to_csv(f"{fname}-QA_{lang}.csv", index=False)
+        #except Exception as e:
+        #    print(f"Error ({name},{lang}): " + type(e).__name__)
