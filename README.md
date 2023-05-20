@@ -18,7 +18,11 @@
 - 讓 ChatGPT 提供對使用者感興趣的問題建議，進而達到自動生成 FAQ 的目標
 - 透過 OpenAI API，施展咒語 (prompt) 讓 ChatGPT 依據輸入的內容 (context，即相關規定) 提出問題；接著再請 ChatGPT 依據輸入的內容，回答所收集到的問題
 - Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
-- Python 語言版本：[[AS-AIGFAQ.py](AS-AIGFAQ.py)]
+- Python 語言版本
+  - 自動產生 FAQ：[[AS-AIGFAQ.py](AS-AIGFAQ.py)]
+  - 自動翻譯成多國語言版本：[[AS-AIGFAQ-to-i18n.py](AS-AIGFAQ-to-i18n.py)]
+  - 產生簡易網頁：[[AS-AIGFAQ-to-HTML.py](AS-AIGFAQ-to-HTML.py)]
+
 
 ## 案例分享
 
@@ -60,7 +64,10 @@
 - Let ChatGPT provide suggestions for questions that users may be interested in, thereby achieving the goal of automatically generating FAQs.
 - Use the OpenAI API to cast a spell (prompt) that prompts ChatGPT to ask questions based on the input content (context, i.e. relevant regulations); then ask ChatGPT to answer the collected questions based on the input content.
 - Google colab notebook： [[colab_notebook_AS_AIGFAQ.ipynb](colab_notebook_AS_AIGFAQ.ipynb)] [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AS-AIGFAQ/AS-AIGFAQ/blob/main/colab_notebook_AS_AIGFAQ.ipynb)
-- Python codes：[[AS-AIGFAQ.py](AS-AIGFAQ.py)]
+- Python codes：
+  - FAQ Generation: [[AS-AIGFAQ.py](AS-AIGFAQ.py)]
+  - Multi-lingual FAQ Generation: [[AS-AIGFAQ-to-i18n.py](AS-AIGFAQ-to-i18n.py)]
+  - Simple Web Page Generation: [[AS-AIGFAQ-to-HTML.py](AS-AIGFAQ-to-HTML.py)]
 
 
 ## Case Sharing
