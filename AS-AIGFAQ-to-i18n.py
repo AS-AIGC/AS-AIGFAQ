@@ -1,4 +1,20 @@
 #!/usr/bin/env python3
+
+"""
+這是一段 Python 程式碼，用於將 FAQ 資料進行多語言翻譯。
+程式碼中使用了 pandas 套件來讀取和處理資料，並使用了 googletrans 
+套件來進行翻譯。程式根據設定文件中的資訊進行多語言翻譯，
+並將翻譯後的結果存儲在新的 CSV 文件中。
+
+This is a Python code snippet for translating FAQ data 
+into multiple languages. The code uses the pandas 
+library to read and process the data, and the 
+googletrans library for translation. The code performs 
+multilingual translation based on the information 
+provided in the configuration file and saves the 
+translated results in new CSV files.
+"""
+
 import pandas as pd
 from googletrans import Translator, LANGUAGES
 import config
