@@ -1,4 +1,5 @@
 OpenAI_Key = "YOUR_OPENAI_API_KEY"
+OpenAI_Organization = "YOUR_OPENAI_ORGANIZATION"
 
 LANGUAGES = ['en', 'ja', 'ko']
 
