@@ -26,16 +26,7 @@
 
 ## 案例分享
 
-- 中央研究院學術計畫申請 FAQ
-  - 原始資料 CSV 檔：[[AS-proposal.csv](examples/AS-proposal.csv)]
-  - 產製 FAQ 檔：[[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - 產製 HTML 檔：[[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
-- 中央研究院資訊服務 FAQ
-  - 原始資料 CSV 檔：[[AS-ITS.csv](examples/AS-ITS.csv)]
-  - 產製 FAQ 檔：[[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - 產製 HTML 檔：[[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+- 中央研究院行政服務常見問答集 [[DEMO](https://aws.cclljj.net/AS-FAQ/)]
 
   
 ## 開發團隊
@@ -72,16 +63,8 @@
 
 ## Case Sharing
 
-- FAQ for Academic Grant Applications at Academia Sinica
-  - Original data CSV file: [[AS-proposal.csv](examples/AS-proposal.csv)]
-  - Generated FAQ file: [[AS-proposal-QA.csv](examples/AS-proposal-QA.csv)]
-  - Generated HTML file: [[AS-proposal-QA.html](examples/AS-proposal-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/proposal.html
-- FAQ for Information Services at Academia Sinica
-  - Original data CSV file: [[AS-ITS.csv](examples/AS-ITS.csv)]
-  - Generated FAQ file: [[AS-ITS-QA.csv](examples/AS-ITS-QA.csv)]
-  - Generated HTML file: [[AS-ITS-QA.html](examples/AS-ITS-QA.html)]
-  - Demo：https://aws.cclljj.net/AS-FAQ/ITS.html 
+- Academia Sinica FAQ: [[DEMO](https://aws.cclljj.net/AS-FAQ/)]
+
 
   
 ## Development Team
