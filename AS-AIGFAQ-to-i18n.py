@@ -26,7 +26,7 @@ translator = Translator()
 
 # Loop through each source file
 for name in SOURCES:
-    print("Dealing with " + name)
+    print("[i18n] Dealing with " + name)
 
     fname = "/home/ec2-user/OpenAI/AS-AIGFAQ/output/" + name
     faq_name = fname + '-QA.csv'

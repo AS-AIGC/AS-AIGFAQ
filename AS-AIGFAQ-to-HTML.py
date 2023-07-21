@@ -21,7 +21,7 @@ LANGUAGES.append("")
 
 # Loop through each source
 for name in SOURCES:
-    print("Dealing with " + name)
+    print("[HTML] Dealing with " + name)
 
     HTML_title = SOURCES[name]
     name = "/home/ec2-user/OpenAI/AS-AIGFAQ/output/" + name

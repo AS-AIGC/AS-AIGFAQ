@@ -44,7 +44,7 @@ def chatGPT_get_questions(row):
 def chatGPT_get_answers(row):
     try:
         # Create a question based on the text description to answer the question
-        q = "請根據下列的文字說明，使用日常說話的語氣，並且避免使用語助詞來回答問題\n\n文字說明： {"+row.context+"}\n\n問題：\n{"+row.question+"}\n\n答案："
+        q = "請根據下列的文字說明，使用日常說話的語氣，並且避免使用語助詞來回答問題\n\n文字說明： \n\n"+row.context+"\n\n問題：\n\n"+row.question+"\n\n答案："
         
         # Request an answer from OpenAI using the GPT-4 model
         rsp = openai.ChatCompletion.create(
@@ -57,8 +57,9 @@ def chatGPT_get_answers(row):
         
         # Return the answer content with leading and trailing whitespaces removed
         return rsp.get("choices")[0]["message"]["content"].lstrip().rstrip()
-    except:
+    except Exception as e:
         # Return an empty string if there is an error
+        #print(e)
         return ""
 
 
@@ -80,6 +81,7 @@ for name in SOURCES:
 
     df['questions'] = "1." + df.questions
 
+
     df2 = pd.DataFrame(columns=['category', 'title', 'context', 'question','group','url','contact'])
 
     for index, row in df.iterrows():
@@ -93,9 +95,8 @@ for name in SOURCES:
                 i = i + 1
 
     df2['answer'] = df2.apply(chatGPT_get_answers, axis=1)
-    df2['answer'] = df2.answer
     df2 = df2.drop(columns=['context'])
-    df2 = df2.dropna().reset_index().drop('index', axis=1)
+    #df2 = df2.dropna().reset_index().drop('index', axis=1)
     df2.to_csv(faq_name, index=False)
 
     end_time = datetime.now()
