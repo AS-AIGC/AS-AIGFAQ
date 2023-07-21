@@ -37,7 +37,7 @@ for name in SOURCES:
 
         # Read the FAQ data from the CSV file
         df = pd.read_csv(faq_name)
-        df.dropna(inplace=True)
+        #df.dropna(inplace=True)
 
         FAQ = {}
         for index, row in df.iterrows():
