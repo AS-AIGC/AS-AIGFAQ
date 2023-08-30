@@ -78,7 +78,7 @@ for name in SOURCES:
                 html += '<div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion_oneLeft" href="#collapseFiveLeft-'+str(num)+'" aria-expanded="false" class="collapsed">'
                 html += question
                 html += '</a></h4></div><div id="collapseFiveLeft-'+str(num)+'" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;"><div class="panel-body"><div class="text-accordion"><p>'
-                html += FAQ[category][question]
+                html += str(FAQ[category][question])
                 html += '</p></div></div></div></div>'
                 num = num + 1
 
