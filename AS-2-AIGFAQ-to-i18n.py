@@ -48,7 +48,7 @@ for name in SOURCES:
                     continue
                 for row in range(len(data)):
                     original_text = data.loc[row, col]
-                    if col in ['category', 'title', 'group', 'contact', 'url']:
+                    if col in ['category', 'title', 'group', 'contact' ]:
                         if data.loc[row, col] not in vocabulary:
                             vocabulary[data.loc[row, col]] = translator.translate(original_text, dest=lang).text
                         translated_text = vocabulary[data.loc[row, col]]
