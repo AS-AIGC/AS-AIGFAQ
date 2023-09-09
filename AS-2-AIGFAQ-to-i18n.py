@@ -44,7 +44,7 @@ for name in SOURCES:
 
             # Translate each column in the FAQ data
             for col in data.columns:
-                if col == 'index':
+                if col in ['index', 'url']:
                     continue
                 for row in range(len(data)):
                     original_text = data.loc[row, col]
