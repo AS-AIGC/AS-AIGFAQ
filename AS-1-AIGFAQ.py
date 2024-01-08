@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import openai
-import pandas as pd
-import re
-from datetime import datetime
-import config
+import openai  # Import the OpenAI library for interacting with the GPT models
+import pandas as pd  # Import pandas for data manipulation and analysis
+import re  # Import the regular expression module for text manipulation
+from datetime import datetime  # Import datetime for handling date and time data
+import config  # Import a configuration module, usually for API keys or settings
+
 
 # Set the environment variable for OpenAI API key
 #%env OPENAI_API_KEY=YOUR_OPENAI_API_KEY
