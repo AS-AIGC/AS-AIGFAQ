@@ -3,3 +3,7 @@ OpenAI_Organization = "YOUR_OPENAI_ORGANIZATION"
 
 LANGUAGES = ['en', 'ja', 'ko']
 
+TAIDE_host = "TAIDE_HOST_URL"
+TAIDE_username = "YOUR_USERNAME"
+TAIDE_password = "YOUR_PASSWORD"
+
