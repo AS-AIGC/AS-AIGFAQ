@@ -111,8 +111,8 @@ for name in SOURCES:
     HTML_title = SOURCES[name]
 
     # Define filenames for reading the source CSV and saving the QA CSV
-    fname = './' + name + '.csv'  # Original data file
-    faq_name = './' + name + '-QA-TAIDE.csv'  # File to save questions and answers
+    fname = "./examples/" + name + '.csv'  # Original data file
+    faq_name = "./output/" + name + '-QA-TAIDE.csv'  # File to save questions and answers
 
     # Read the source CSV into a pandas DataFrame
     df = pd.read_csv(fname)
