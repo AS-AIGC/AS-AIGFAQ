@@ -46,7 +46,7 @@ def TAIDE_get_questions(row):
         
         # Define the data payload for the POST request, including model settings
         data = {
-            "model": "TAIDE/b.1.0.0",  # Specify the model version
+            "model": "TAIDE/b.11.0.0",  # Specify the model version
             "prompt": prompt_1,  # The prepared prompt
             "temperature": 0.2,  # Low temperature for less randomness
             "top_p": 0.9,  # High top_p for more diverse outputs
